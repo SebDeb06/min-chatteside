@@ -17,7 +17,7 @@ async function fetchComments() {
         commentListInformation.className = "commentInfo";
         commentListContent.className = "commentContent";
         //Fyller inn innhold i kommentaren (tidspunkt + id_bruker og kommentar)
-        commentListInformation.textContent = `${comment.Tidspunkt} - Bruker ID ${comment.ID_bruker}:`;
+        commentListInformation.textContent = `${comment.Tidspunkt} - BrukerID ${comment.ID_bruker}:`;
         commentListContent.textContent = `${comment.Kommentar}`;
     });
 }

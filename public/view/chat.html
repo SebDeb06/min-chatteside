@@ -12,17 +12,19 @@
   </script>
 </head>
 <body>
-<h2>Alle kommentarer</h2>
-  <div class ="commentList" id="commentList"></div>
-
-  <h1>Legg til en kommentar</h1>
-  <!-- Skjema for å legge til ny kommentar -->
-  <form onsubmit="submitComment(event)">
-    <textarea id="Kommentar" required placeholder="Skriv din kommentar her..."></textarea>
-    <br>
-    <button type="submit">Legg til kommentar</button>
-  </form>
+  <div class="div-wrapper">
+    <h2 class="all-comments">Alle kommentarer</h2>
+    <div class ="commentList" id="commentList"></div>
   
-  <p><a href="/logout">Logg ut</a></p>
+    <h1 class="add-comment-style">Legg til en kommentar</h1>
+    <!-- Skjema for å legge til ny kommentar -->
+    <form onsubmit="submitComment(event)" class="form-style">
+      <textarea id="Kommentar" class="Kommentar-style" required placeholder="Skriv din kommentar her..."></textarea>
+      <br>
+      <button type="submit" class="submit-wrapper">Legg til kommentar</button>
+    </form>
+    
+    <p><a href="/logout" class="log-out">Logg ut</a></p>
+  </div>
 </body>
 </html>

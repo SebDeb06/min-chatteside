@@ -12,11 +12,71 @@ html {
 
 /* Din CSS-kode under her */
 
+body{
+    font-family: monospace;
+}
+
+.div-wrapper{
+    background-color: gainsboro;
+    display: grid;
+    border-radius: 10px;
+    width: 45vw;
+    padding: 25px;
+    margin-left: 27.5vw;
+    margin-top: 12.5vh;
+    justify-content: center;
+}
+
+.all-comments{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+.add-comment-style{
+    justify-self: center;
+    font-size: xx-large;
+}
+
+.form-style{
+    justify-self: center;
+    text-align: center;
+}
+
+.log-out{
+    display: flex;
+    text-decoration: none;
+    justify-self: center;
+}
+
+.submit-wrapper{
+    padding: 10px;
+}
+
+.Kommentar-style{
+    resize: none;
+    padding: 10px;
+}
+
 .commentList {
     /* Parent til comment */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow:hidden;
+    gap: 5px;
+    padding: 15px;
+    font-family: monospace;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: darkgray;
 }
 .comment {
     /* Parent til commentInfo og commentContent */
+    max-height: 5vh;
+    overflow: hidden;
 }
 .commentInfo {
     /* Child av comment */
